@@ -8,7 +8,6 @@ const port = process.env.PORT || 8080;
 corsProxy
   .createServer({
     originWhitelist: [
-      'http://localhost:3000',
       'https://crypto-four.herokuapp.com/',
     ],
     requireHeader: ['origin', 'x-requested-with'],
